@@ -1,0 +1,26 @@
+﻿@import '~nativescript-theme-core/css/core.light.css';
+
+.event {
+    color: white;
+    font-weight: bold;
+}
+.event.firstVisit        {background-color:#0090FF;}
+.event.firstVisit:hover  {background-color:#A8CEEC;}
+.event.newsRead          {background-color:#10ACFF;}
+.event.newsRead:hover    {background-color:#66C8FC;}
+.event.gameOver          {background-color:#63C0F2;}
+.event.gameOver:hover    {background-color:#8DCFF3;}
+.event.like              {background-color:#ACD0E4;}
+.event.like:hover        {background-color:#D0CFCF;}
+.event.addToCart         {background-color:#959595;}
+.event.addToCart:hover   {background-color:#B3B2B2;}
+.event.purchase          {background-color:#333333;}
+.event.purchase:hover    {background-color:#555454;}
+.event.geofencing        {background-color:#009966;}
+.event.geofencing:hover  {background-color:#43957A;}
+.event.inactivity        {background-color:#DE7171;}
+.event.inactivity:hover  {background-color:#C26868;}
+.event.genderMale        {background-color:#DE7171;}
+.event.genderMale:hover  {background-color:#C26868;}
+.event.genderFemale      {background-color:#DE7171;}
+.event.genderFemale:hover{background-color:#C26868;}

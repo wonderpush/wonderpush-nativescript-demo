@@ -1,0 +1,27 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" class="page" loaded="loaded">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+            <ActionItem tap="tapGetCustom"
+                        ios.systemIcon="9" ios.position="right"
+                        text="Get install custom"
+                        android.position="popup"></ActionItem>
+        </ActionBar>
+    </Page.actionBar>
+
+    <ScrollView>
+        <StackLayout class="">
+            <Button text="First visit" tap="tapTrackEvent" event="firstVisit" class="event firstVisit"/>
+            <Button text="News read" tap="tapTrackEvent" event="newsRead" class="event newsRead"/>
+            <Button text="Game over" tap="tapTrackEvent" event="gameOver" class="event gameOver"/>
+            <Button text="Like" tap="tapTrackEvent" event="like" class="event like"/>
+            <Button text="Add to cart" tap="tapTrackEvent" event="addToCart" custom="{&quot;float_amount&quot;: 14.99}" class="event addToCart"/>
+            <Button text="Purchase" tap="tapTrackEvent" event="purchase" class="event purchase"/>
+            <Button text="Geofencing" tap="tapTrackEvent" event="geofencing" class="event geofencing"/>
+            <Button text="Inactive user" tap="tapTrackEvent" event="inactivity" class="event inactivity"/>
+            <Button text="Gender: male" tap="tapSetCustom" custom="{&quot;string_gender&quot;: &quot;male&quot;}" class="event genderMale"/>
+            <Button text="Gender: female" tap="tapSetCustom" custom="{&quot;string_gender&quot;: &quot;female&quot;}" class="event genderFemale"/>
+        </StackLayout>
+    </ScrollView>
+
+</Page>

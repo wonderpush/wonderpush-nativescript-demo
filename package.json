@@ -1,0 +1,24 @@
+{
+  "description": "WonderPush Demo",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wonderpush/wonderpush-nativescript-demo.git"
+  },
+  "nativescript": {
+    "id": "com.wonderpush.demo",
+    "tns-android": {
+      "version": "4.0.1"
+    }
+  },
+  "dependencies": {
+    "nativescript-theme-core": "~1.0.4",
+    "tns-core-modules": "~4.0.0"
+  },
+  "devDependencies": {
+    "babel-traverse": "6.26.0",
+    "babel-types": "6.26.0",
+    "babylon": "6.18.0",
+    "lazy": "1.0.11"
+  }
+}
