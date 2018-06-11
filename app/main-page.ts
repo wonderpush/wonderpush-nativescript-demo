@@ -1,4 +1,5 @@
 import * as dialogs from "ui/dialogs";
+import { WonderPush } from "wonderpush-nativescript-sdk";
 
 let page;
 
@@ -10,34 +11,32 @@ export function loaded(args) {
 export function trackEvent(type, custom) {
     console.log('Track event:', type);
     if (custom) {
-        console.log(custom);
+        console.dir(custom);
     }
+    WonderPush.trackEvent(type, custom);
 }
 
 export function setCustom(custom) {
     console.log('Set custom:');
     console.dir(custom);
+    WonderPush.putInstallationCustomProperties(custom);
 }
 
 export function tapTrackEvent(args) {
-    trackEvent(args.object.event, args.object.custom);
+    trackEvent(args.object.event, JSON.parse(args.object.custom));
 }
 
 export function tapSetCustom(args) {
-    setCustom(args.object.custom);
+    setCustom(JSON.parse(args.object.custom));
 }
 
 export function getCustom() {
-    return new Promise((resolve) =>
-        setTimeout(() => resolve({string_fake: 'NOT_IMPLEMENTED'}), 500)
-    );
+    return WonderPush.getInstallationCustomProperties();
 }
 
 export function tapGetCustom() {
-    getCustom().then((custom) =>
-        dialogs.alert({
-            message: JSON.stringify(custom),
-            okButtonText: "OK"
-        })
-    );
+    dialogs.alert({
+        message: JSON.stringify(getCustom()),
+        okButtonText: "OK"
+    });
 }

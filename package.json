@@ -8,12 +8,14 @@
   "nativescript": {
     "id": "com.wonderpush.demo",
     "tns-android": {
-      "version": "4.0.1"
+      "version": "4.1.2"
     }
   },
   "dependencies": {
-    "nativescript-theme-core": "~1.0.4",
-    "tns-core-modules": "~4.0.0"
+    "nativescript-theme-core": "^1.0.4",
+    "tns-core-modules": "^4.1.0",
+    "tns-platform-declarations": "^4.0.0",
+    "wonderpush-nativescript-sdk": "file:../wonderpush-nativescript-sdk/src"
   },
   "devDependencies": {
     "babel-traverse": "6.26.0",
