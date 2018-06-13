@@ -3,6 +3,14 @@ import { WonderPush } from "wonderpush-nativescript-sdk";
 
 let page;
 
+function fromJson(json) {
+    if (!json) return undefined;
+    try {
+        return JSON.parse(json);
+    } catch (e) {}
+    return null;
+}
+
 export function loaded(args) {
     page = args.object;
     console.log('Loaded');
@@ -23,11 +31,11 @@ export function setCustom(custom) {
 }
 
 export function tapTrackEvent(args) {
-    trackEvent(args.object.event, JSON.parse(args.object.custom));
+    trackEvent(args.object.event, fromJson(args.object.custom));
 }
 
 export function tapSetCustom(args) {
-    setCustom(JSON.parse(args.object.custom));
+    setCustom(fromJson(args.object.custom));
 }
 
 export function getCustom() {
