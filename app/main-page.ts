@@ -14,6 +14,7 @@ function fromJson(json) {
 export function loaded(args) {
     page = args.object;
     console.log('Loaded');
+    WonderPush.setNotificationEnabled(true);
 }
 
 export function trackEvent(type, custom) {

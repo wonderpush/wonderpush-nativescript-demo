@@ -9,6 +9,9 @@
     "id": "com.wonderpush.demo",
     "tns-android": {
       "version": "4.1.2"
+    },
+    "tns-ios": {
+      "version": "4.1.0"
     }
   },
   "dependencies": {

@@ -226,11 +226,15 @@ tns-core-modules-widgets@4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/tns-core-modules-widgets/-/tns-core-modules-widgets-4.1.0.tgz#bfb706fb5f246d2f44e7c652dbe4564fdf9c0261"
 
-tns-core-modules@^4.0.0:
+tns-core-modules@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/tns-core-modules/-/tns-core-modules-4.1.0.tgz#f838f0e040b9cdef8d361ba7392dfece51762fc2"
   dependencies:
     tns-core-modules-widgets "4.1.0"
+
+tns-ios@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/tns-ios/-/tns-ios-4.1.0.tgz#6530724659e729b303a30829017dc5a035da5555"
 
 tns-platform-declarations@^4.0.0:
   version "4.1.0"
