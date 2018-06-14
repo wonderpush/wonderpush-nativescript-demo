@@ -16,9 +16,9 @@
   },
   "dependencies": {
     "nativescript-theme-core": "^1.0.4",
+    "tns-android": "4.1.2",
     "tns-core-modules": "^4.1.0",
-    "tns-platform-declarations": "^4.0.0",
-    "wonderpush-nativescript-sdk": "file:../wonderpush-nativescript-sdk/src"
+    "tns-platform-declarations": "^4.0.0"
   },
   "devDependencies": {
     "babel-traverse": "6.26.0",
@@ -26,6 +26,7 @@
     "babylon": "6.18.0",
     "lazy": "1.0.11",
     "nativescript-dev-typescript": "^0.7.1",
-    "typescript": "^2.8.3"
+    "typescript": "^2.8.3",
+    "wonderpush-nativescript-sdk": "file:../wonderpush-nativescript-sdk/src"
   }
 }

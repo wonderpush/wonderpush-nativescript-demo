@@ -222,6 +222,10 @@ supports-color@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
 
+tns-android@4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/tns-android/-/tns-android-4.1.2.tgz#a74c6e77ea18b615fea18a96c25198ff490ae1a2"
+
 tns-core-modules-widgets@4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/tns-core-modules-widgets/-/tns-core-modules-widgets-4.1.0.tgz#bfb706fb5f246d2f44e7c652dbe4564fdf9c0261"
